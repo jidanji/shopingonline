@@ -17,7 +17,9 @@ export default class index extends Component {
       <div className="ShopListContainer">
         {dataSource.map((item) => (
           <div className="ShopItemContainer">
-            <div className="title">{item?.title}</div>
+            <div className="title" title={item?.title}>
+              {item?.title}
+            </div>
             <div className="price">
               {item?.price}*{item?.counter}
             </div>
@@ -40,7 +42,15 @@ export default class index extends Component {
         )}
 
         {!dataSource.length && (
-          <div style={{ textAlign: 'center' }}>购物车没有商品</div>
+          <div
+            style={{
+              textAlign: 'center',
+              lineHeight: '100px',
+              height: '100px',
+            }}
+          >
+            购物车没有商品
+          </div>
         )}
       </div>
     );

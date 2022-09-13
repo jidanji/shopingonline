@@ -7,7 +7,7 @@ import Button from '@/components/Button';
 import { Commoditys } from '@/utils/Commoditys';
 
 export default class index extends Component<any, any> {
-  constructor(props) {
+  constructor(props: any) {
     super(props);
   }
   AddCart = (data: any) => {
@@ -31,7 +31,7 @@ export function CommodityItem({ dataSource, onAddCart = () => {} }) {
         <img className="Img" src={dataSource.imgurl} alt="" />
       </div>
       <div className="toolBar">
-        <div className="title" title="苹果苹果苹果苹果苹果">
+        <div className="title" title={dataSource.title}>
           {dataSource.title}
         </div>
         <div className="price">¥{dataSource.price}</div>

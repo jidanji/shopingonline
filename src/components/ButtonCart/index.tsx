@@ -19,7 +19,6 @@ class index extends Component<any, any> {
       children = '我是按钮',
       showBagage = false,
       Bagage = '',
-      Addon,
     } = this.props;
     return (
       <div

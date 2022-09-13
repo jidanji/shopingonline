@@ -7,13 +7,7 @@ import CommodityList from '@/components/CommodityList';
 
 import { connect } from 'dva';
 
-import ShopList from '@/components/ShopList';
-
-class index extends Component {
-  state = {
-    Addon: null,
-  };
-
+class index extends Component<any, any> {
   onAddCart = (data) => {
     this.props.dispatch({ type: 'CommodityListModal/addList', payload: data });
   };

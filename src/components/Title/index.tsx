@@ -11,17 +11,7 @@ export default class index extends Component {
       <div className="TitleContainer">
         <div className="leftDiv">购物天堂</div>
         <div className="rightDiv">
-          <Button
-            showBagage={true}
-            Bagage={totalNum}
-            onmouseover={() => {
-              this.props?.onmouseover?.();
-            }}
-            onmouseout={() => {
-              this.props?.onmouseout?.();
-            }}
-            Addon={Addon}
-          >
+          <Button showBagage={true} Bagage={totalNum}>
             购物车
           </Button>
         </div>
